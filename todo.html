@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List (CRUD)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input, button {
+            margin: 5px;
+            padding: 10px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #f3f3f3;
+            margin: 5px;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .completed {
+            text-decoration: line-through;
+            color: gray;
+        }
+        .edit-btn, .delete-btn {
+            margin-left: 5px;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
+        }
+        .edit-btn {
+            background: blue;
+            color: white;
+        }
+        .delete-btn {
+            background: red;
+            color: white;
+        }
+        .clear-btn {
+            background: darkred;
+            color: white;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>To-Do List (CRUD)</h1>
+    <input type="text" id="taskInput" placeholder="Enter a task">
+    <button id="addTaskBtn">Add Task</button>
+    <ul id="taskList"></ul>
+    <button class="clear-btn" id="clearAllBtn">Clear All</button>
+
+    <script src="to.js"></script>
+</body>
+</html>
